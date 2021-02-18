@@ -82,3 +82,11 @@ body {
   margin-left: 5%;
   margin-top: 5%;
 }
+
+.seekr-content {
+  background-color: #edebe4;
+  position: sticky;
+  width: 75%;
+  height: 75%;
+  align-items: center;
+}

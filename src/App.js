@@ -1,7 +1,7 @@
 import "./App.css";
-import Main from "./Main";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import Main from "./Components/Main";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
