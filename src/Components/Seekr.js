@@ -16,7 +16,7 @@ class Seekr extends React.Component {
         <div className="seekr-modal">
           <div className="seekr-content">
             <h1>Hey! this is the seekr pop up window!</h1>
-            <button onClick={this.handleClick}>X</button>
+            <button onClick={this.props.togglePopUp}>X</button>
           </div>
         </div>
       </div>

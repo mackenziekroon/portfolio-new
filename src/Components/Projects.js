@@ -7,10 +7,10 @@ class Projects extends React.Component {
     this.state = {
       seekrOpen: false,
     };
-    this.loadPopUp = this.loadPopUp.bind(this);
+    this.togglePopUp = this.togglePopUp.bind(this);
   }
 
-  loadPopUp() {
+  togglePopUp() {
     this.setState({
       seekrOpen: !this.state.seekrOpen,
     });
@@ -23,12 +23,14 @@ class Projects extends React.Component {
           <div className="project-title">Projects</div>
           <div className="projects">
             <div>
-              <button onClick={this.loadPopUp} className="seekr">
+              <button onClick={this.togglePopUp} className="seekr">
                 seekr
                 <p>A PWA that allows candidates and recruiters to connect</p>
               </button>
             </div>
-            {this.state.seekrOpen ? <Seekr /> : null}
+            {this.state.seekrOpen ? (
+              <Seekr togglePopUp={this.togglePopUp} />
+            ) : null}
             <div>
               <button className="pup-quiz">Pup Quiz</button>
             </div>
