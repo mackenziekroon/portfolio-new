@@ -27,10 +27,36 @@ body {
   width: 100vw;
 }
 
-.seekr {
-  color: #edebe4;
+.projects {
+  padding-top: 5%;
   margin-left: 5%;
-  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.seekr {
+  background-color: #edebe4;
+  height: 200px;
+  width: 200px;
+  border-radius: 25%;
+  border: solid 1px #edebe4;
+}
+
+.pup-quiz {
+  background-color: #edebe4;
+  height: 200px;
+  width: 200px;
+  border-radius: 25%;
+  border: solid 1px #edebe4;
+}
+
+.fruitfy-juicery {
+  background-color: #edebe4;
+  height: 200px;
+  width: 200px;
+  border-radius: 25%;
+  border: solid 1px #edebe4;
 }
 
 .contact-container {

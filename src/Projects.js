@@ -4,8 +4,17 @@ const Projects = () => {
   return (
     <div>
       <div className="projects-container">
-        <div className="seekr">
-          <h1>seekr</h1>
+        <h1>Projects</h1>
+        <div className="projects">
+          <div>
+            <button className="seekr">seekr</button>
+          </div>
+          <div>
+            <button className="pup-quiz">Pup Quiz</button>
+          </div>
+          <div>
+            <button className="fruitfy-juicery">Fruitify Juicery</button>
+          </div>
         </div>
       </div>
     </div>
