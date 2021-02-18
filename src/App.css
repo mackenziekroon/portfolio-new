@@ -47,7 +47,7 @@ body {
   font-size: 20px;
   height: 400px;
   width: 300px;
-  border-radius: 25% 40% 70% 30%;
+  border-radius: 37% 63% 44% 56% / 23% 48% 52% 77%;
   border: solid 1px #edebe4;
 }
 
@@ -57,7 +57,7 @@ body {
   font-size: 20px;
   height: 400px;
   width: 300px;
-  border-radius: 65% 90% 40% 20%;
+  border-radius: 79% 21% 30% 70% / 36% 45% 55% 64%;
   border: solid 1px #edebe4;
 }
 
@@ -67,8 +67,8 @@ body {
   font-size: 20px;
   height: 400px;
   width: 300px;
-  border-radius: 86% 30% 15% 29%;
-  border: solid 1px #edebe4;
+  border-radius: 29% 71% 59% 41% / 82% 55% 45% 18%;
+  border: solid 3px darkslategray;
 }
 
 .contact-container {
