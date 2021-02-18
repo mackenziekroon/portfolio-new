@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div>
       <div className="projects-container">
-        <h1>Projects</h1>
+        <div className="project-title">Projects</div>
         <div className="projects">
           <div>
             <button className="seekr">seekr</button>
