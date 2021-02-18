@@ -15,8 +15,16 @@ class Seekr extends React.Component {
       <div>
         <div className="seekr-modal">
           <div className="seekr-content">
-            <h1>Hey! this is the seekr pop up window!</h1>
-            <button onClick={this.props.togglePopUp}>X</button>
+            <div className="seekr-heading">
+              seekr - a Progressive Web App that allows candidates and
+              prospective employers to match each other and connect
+            </div>
+            <button
+              className="seekr-close-btn"
+              onClick={this.props.togglePopUp}
+            >
+              X
+            </button>
           </div>
         </div>
       </div>
