@@ -48,7 +48,7 @@ body {
   height: 400px;
   width: 300px;
   border-radius: 37% 63% 44% 56% / 23% 48% 52% 77%;
-  border: solid 1px #edebe4;
+  border: solid 3px darkslategray;
 }
 
 .pup-quiz {
@@ -58,7 +58,7 @@ body {
   height: 400px;
   width: 300px;
   border-radius: 79% 21% 30% 70% / 36% 45% 55% 64%;
-  border: solid 1px #edebe4;
+  border: solid 3px darkslategray;
 }
 
 .fruitfy-juicery {
@@ -128,7 +128,9 @@ body {
 
 a {
   text-decoration: none;
-  padding: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
 }
 
 a:visited {

@@ -13,7 +13,7 @@ const Main = () => {
             rel="noopener noreferrer"
             style={{ color: "#2b764c" }}
           >
-            <LinkedInIcon fontSize="medium" />
+            <LinkedInIcon fontSize="large" />
           </a>
           <a
             href="https://github.com/mackenziekroon"
@@ -21,7 +21,7 @@ const Main = () => {
             rel="noopener noreferrer"
             style={{ color: "#2b764c" }}
           >
-            <GitHubIcon fontSize="medium" />
+            <GitHubIcon fontSize="large" />
           </a>
         </div>
         <div className="heading">
