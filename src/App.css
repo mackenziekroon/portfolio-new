@@ -51,6 +51,10 @@ body {
   border: solid 3px darkslategray;
 }
 
+.seekr:hover {
+  border: solid 7px #1e5234;
+}
+
 .pup-quiz {
   background-color: #edebe4;
   color: #2b764c;
@@ -61,6 +65,10 @@ body {
   border: solid 3px darkslategray;
 }
 
+.pup-quiz:hover {
+  border: solid 7px #1e5234;
+}
+
 .fruitfy-juicery {
   background-color: #edebe4;
   color: #2b764c;
@@ -69,6 +77,10 @@ body {
   width: 300px;
   border-radius: 29% 71% 59% 41% / 82% 55% 45% 18%;
   border: solid 3px darkslategray;
+}
+
+.fruitfy-juicery:hover {
+  border: solid 7px #1e5234;
 }
 
 .contact-container {

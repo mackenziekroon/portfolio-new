@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -9,16 +10,30 @@ class Contact extends React.Component {
       message: "",
     };
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.submitEmail = this.submitEmail.bind(this);
   }
 
   handleChange(event) {
     this.setState({ [event.target.name]: event.target.value });
   }
 
-  handleSubmit(event) {
-    alert("A name was submitted: " + this.state.message);
-    event.preventDefault();
+  submitEmail(e) {
+    e.preventDefault();
+    axios({
+      method: "POST",
+      url: "/send",
+      data: this.state,
+    }).then((response) => {
+      if (response.data.status === "success") {
+        alert("Message Sent.");
+        this.resetForm();
+      } else if (response.data.status === "fail") {
+        alert("Message failed to send.");
+      }
+    });
+  }
+  resetForm() {
+    this.setState({ name: "", email: "", subject: "", message: "" });
   }
 
   render() {
@@ -27,7 +42,7 @@ class Contact extends React.Component {
         <div className="contact-container">
           <div className="contact-form-container">
             <h1>Let's get in touch</h1>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.submitEmail} method="POST">
               <label>
                 Full Name:
                 <input
