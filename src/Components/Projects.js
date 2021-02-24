@@ -24,7 +24,7 @@ class Projects extends React.Component {
           <div className="projects">
             <div>
               <button onClick={this.togglePopUp} className="seekr">
-                seekr
+                <strong>seekr</strong>
                 <p>A PWA that allows candidates and recruiters to connect</p>
               </button>
             </div>
@@ -32,10 +32,19 @@ class Projects extends React.Component {
               <Seekr togglePopUp={this.togglePopUp} />
             ) : null}
             <div>
-              <button className="pup-quiz">Pup Quiz</button>
+              <button className="pup-quiz">
+                <strong>Pup Quiz</strong>
+                <p>A mobile app that tests users' knowledge of dog breeds</p>
+              </button>
             </div>
             <div>
-              <button className="fruitfy-juicery">Fruitify Juicery</button>
+              <button className="fruitfy-juicery">
+                <strong>Fruitify Juicery</strong>
+                <p>
+                  A mock e-commerce web application that sells juices &
+                  smoothies
+                </p>
+              </button>
             </div>
           </div>
         </div>

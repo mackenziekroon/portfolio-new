@@ -30,7 +30,8 @@ body {
 .project-title {
   padding-top: 3%;
   padding-left: 5%;
-  font-size: 30px;
+  font-size: 40px;
+  color: #edebe4;
 }
 
 .projects {
