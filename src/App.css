@@ -180,7 +180,18 @@ body {
   margin-right: 15%;
   width: 30%;
   height: 50%;
-  background-color: salmon;
+  color: #2b764c;
+  text-decoration: none;
+}
+
+.links {
+  text-decoration: none;
+  color: #2b764c;
+}
+
+.links:visited {
+  text-decoration: none;
+  color: #2b764c;
 }
 
 .seekr-close-btn {
