@@ -24,16 +24,16 @@ class Seekr extends React.Component {
             </button>
             <div className="seekr-heading">
               <strong>seekr</strong>
-              <p>
-                a Progressive Web App that allows candidates and prospective
-                employers to match each other and connect
-              </p>
             </div>
             <div className="seekr-content">
               <div className="seekr-details">
                 <img className="seekr-img" alt="" src={seekrScreen} />
               </div>
               <div className="seekr-links">
+                <p>
+                  seekr is a Progressive Web App that allows candidates and
+                  prospective employers to match each other and connect
+                </p>
                 <div className="seekr-demo">
                   <a
                     className="links"
