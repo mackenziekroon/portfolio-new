@@ -1,5 +1,7 @@
 import React from "react";
 import seekrScreen from "../seekrScreen.png";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 
 class Seekr extends React.Component {
   constructor(props) {
@@ -41,6 +43,7 @@ class Seekr extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <YouTubeIcon fontSize="large" />
                     Demo
                   </a>
                 </div>
@@ -51,6 +54,7 @@ class Seekr extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <GitHubIcon fontSize="large" />
                     Code
                   </a>
                 </div>
