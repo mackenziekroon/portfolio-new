@@ -36,47 +36,49 @@ class Seekr extends React.Component {
               <div className="seekr-details">
                 <img className="seekr-img" alt="" src={seekrScreen} />
               </div>
-              {/* <div> */}
-              {/* Links */}
+
               <div className="seekr-links">
-                <div className="seekr-website">
-                  <a
-                    className="links"
-                    href="https://seekr-capstone.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <HttpIcon fontSize="large" />
-                  </a>
+                <div className="links-circle">
+                  <div className="seekr-website">
+                    <a
+                      className="links"
+                      href="https://seekr-capstone.herokuapp.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <HttpIcon fontSize="large" />
+                    </a>
+                  </div>
+                  <div className="seekr-demo">
+                    <a
+                      className="links"
+                      href="https://www.youtube.com/watch?v=ByWsbggwCiM&list=PLx0iOsdUOUml9uxVlTFGdM_l9MC2GqwBA&index=7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <YouTubeIcon fontSize="large" />
+                    </a>
+                  </div>
+                  <div className="seekr-github">
+                    <a
+                      className="links"
+                      href="https://github.com/Job-application-app-GH/job-app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GitHubIcon fontSize="large" />
+                    </a>
+                  </div>
                 </div>
-                <div className="seekr-demo">
-                  <a
-                    className="links"
-                    href="https://www.youtube.com/watch?v=ByWsbggwCiM&list=PLx0iOsdUOUml9uxVlTFGdM_l9MC2GqwBA&index=7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <YouTubeIcon fontSize="large" />
-                  </a>
+                <div className="tech-stack-circle">
+                  <div className="seekr-tech-stack">
+                    <div>Created with:</div>
+                    Javascript, Node, Express, React, Redux
+                  </div>
                 </div>
-                <div className="seekr-github">
-                  <a
-                    className="links"
-                    href="https://github.com/Job-application-app-GH/job-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GitHubIcon fontSize="large" />
-                  </a>
-                </div>
-                {/* <div className="seekr-tech-stack">
-                  <div>Created with:</div>
-                  Javascript, Node, Express, React, Redux
-                </div> */}
               </div>
             </div>
           </div>
-          {/* </div> */}
         </div>
       </div>
     );
