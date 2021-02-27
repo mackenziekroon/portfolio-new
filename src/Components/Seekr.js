@@ -2,6 +2,7 @@ import React from "react";
 import seekrScreen from "../seekrScreen.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import HttpIcon from "@material-ui/icons/Http";
 
 class Seekr extends React.Component {
   constructor(props) {
@@ -26,16 +27,27 @@ class Seekr extends React.Component {
             </button>
             <div className="seekr-heading">
               <strong>seekr</strong>
+              <p>
+                seekr is a Progressive Web App that allows candidates and
+                prospective employers to match each other and connect
+              </p>
             </div>
             <div className="seekr-content">
               <div className="seekr-details">
                 <img className="seekr-img" alt="" src={seekrScreen} />
               </div>
+
               <div className="seekr-links">
-                <p>
-                  seekr is a Progressive Web App that allows candidates and
-                  prospective employers to match each other and connect
-                </p>
+                <div className="seekr-website">
+                  <a
+                    className="links"
+                    href="https://seekr-capstone.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <HttpIcon fontSize="large" />
+                  </a>
+                </div>
                 <div className="seekr-demo">
                   <a
                     className="links"
@@ -44,7 +56,6 @@ class Seekr extends React.Component {
                     rel="noopener noreferrer"
                   >
                     <YouTubeIcon fontSize="large" />
-                    Demo
                   </a>
                 </div>
                 <div className="seekr-github">
@@ -55,11 +66,11 @@ class Seekr extends React.Component {
                     rel="noopener noreferrer"
                   >
                     <GitHubIcon fontSize="large" />
-                    Code
                   </a>
                 </div>
                 <div className="seekr-tech-stack">
-                  Tech Stack: Javascript, Node, Express, React, Redux
+                  <div>Created with:</div>
+                  Javascript, Node, Express, React, Redux
                 </div>
               </div>
             </div>
