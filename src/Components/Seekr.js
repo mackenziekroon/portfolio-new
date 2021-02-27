@@ -36,7 +36,8 @@ class Seekr extends React.Component {
               <div className="seekr-details">
                 <img className="seekr-img" alt="" src={seekrScreen} />
               </div>
-
+              {/* <div> */}
+              {/* Links */}
               <div className="seekr-links">
                 <div className="seekr-website">
                   <a
@@ -68,13 +69,14 @@ class Seekr extends React.Component {
                     <GitHubIcon fontSize="large" />
                   </a>
                 </div>
-                <div className="seekr-tech-stack">
+                {/* <div className="seekr-tech-stack">
                   <div>Created with:</div>
                   Javascript, Node, Express, React, Redux
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
+          {/* </div> */}
         </div>
       </div>
     );
