@@ -76,7 +76,7 @@ class Seekr extends React.Component {
                       href="https://github.com/Job-application-app-GH/job-app"
                       target="_blank"
                       rel="noopener noreferrer"
-                      // style={{ color: "#2b764c" }}
+                      style={{ color: "#2b764c" }}
                     >
                       <GitHubIcon fontSize="large" />
                     </a>
