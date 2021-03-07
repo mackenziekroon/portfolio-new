@@ -54,6 +54,7 @@ class Seekr extends React.Component {
                       href="https://seekr-capstone.herokuapp.com/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      style={{ color: "#2b764c" }}
                     >
                       <HttpIcon fontSize="large" />
                     </a>
@@ -64,6 +65,7 @@ class Seekr extends React.Component {
                       href="https://www.youtube.com/watch?v=ByWsbggwCiM&list=PLx0iOsdUOUml9uxVlTFGdM_l9MC2GqwBA&index=7"
                       target="_blank"
                       rel="noopener noreferrer"
+                      style={{ color: "#2b764c" }}
                     >
                       <YouTubeIcon fontSize="large" />
                     </a>
@@ -74,6 +76,7 @@ class Seekr extends React.Component {
                       href="https://github.com/Job-application-app-GH/job-app"
                       target="_blank"
                       rel="noopener noreferrer"
+                      // style={{ color: "#2b764c" }}
                     >
                       <GitHubIcon fontSize="large" />
                     </a>
@@ -81,15 +84,16 @@ class Seekr extends React.Component {
                 </div>
                 <div className="tech-stack-circle">
                   <div className="seekr-tech-stack">
-                    <div>Created with:</div>
-                    <ul>
+                    {/* <div>Created with:</div> */}
+                    {/* <ul>
                       <li>Javascript</li>
                       <li>Node</li>
                       <li>Express</li>
                       <li>React</li>
                       <li>Redux</li>
-                    </ul>
-                    {/* Javascript, Node, Express, React, Redux */}
+                    </ul> */}
+                    Javascript &middot; Node &middot; Express &middot; React
+                    &middot; Redux
                   </div>
                 </div>
               </div>
