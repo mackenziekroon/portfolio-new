@@ -1,5 +1,7 @@
 import React from "react";
 import seekrScreen from "../seekrScreen.png";
+import seekrScreen2 from "../seekrScreen2.png";
+import seekrScreen3 from "../seekrScreen3.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import HttpIcon from "@material-ui/icons/Http";
@@ -26,18 +28,25 @@ class Seekr extends React.Component {
               x
             </button>
             <div className="seekr-heading">
-              <strong>seekr</strong>
-              <p>
-                seekr is a Progressive Web App that allows candidates and
-                prospective employers to match each other and connect
+              <p className="line-border-projects">
+                <strong>seekr</strong> is a Progressive Web App that allows
+                candidates and prospective employers in the tech industry to
+                match each other based on skills
               </p>
             </div>
             <div className="seekr-content">
               <div className="seekr-details">
-                <img className="seekr-img" alt="" src={seekrScreen} />
+                <img
+                  className="seekr-img"
+                  id="image-one"
+                  alt=""
+                  src={seekrScreen}
+                />
+                {/* <img className="seekr-img" alt="" src={seekrScreen2} /> */}
+                <img className="seekr-img" alt="" src={seekrScreen3} />
               </div>
 
-              <div className="seekr-links">
+              <div>
                 <div className="links-circle">
                   <div className="seekr-website">
                     <a
@@ -73,7 +82,14 @@ class Seekr extends React.Component {
                 <div className="tech-stack-circle">
                   <div className="seekr-tech-stack">
                     <div>Created with:</div>
-                    Javascript, Node, Express, React, Redux
+                    <ul>
+                      <li>Javascript</li>
+                      <li>Node</li>
+                      <li>Express</li>
+                      <li>React</li>
+                      <li>Redux</li>
+                    </ul>
+                    {/* Javascript, Node, Express, React, Redux */}
                   </div>
                 </div>
               </div>
