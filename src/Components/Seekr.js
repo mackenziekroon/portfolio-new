@@ -28,11 +28,7 @@ class Seekr extends React.Component {
               x
             </button>
             <div className="seekr-heading">
-              <p className="line-border-projects">
-                <strong>seekr</strong> is a Progressive Web App that allows
-                candidates and prospective employers in the tech industry to
-                match each other based on skills
-              </p>
+              <strong>seekr</strong>
             </div>
             <div className="seekr-content">
               <div className="seekr-details">
@@ -46,7 +42,12 @@ class Seekr extends React.Component {
                 <img className="seekr-img" alt="" src={seekrScreen3} />
               </div>
 
-              <div>
+              <div className="right-column">
+                <p className="line-border-projects">
+                  seekr is a Progressive Web App that allows candidates and
+                  prospective employers in the tech industry to match each other
+                  based on skills
+                </p>
                 <div className="links-circle">
                   <div className="seekr-website">
                     <a
@@ -93,7 +94,7 @@ class Seekr extends React.Component {
                       <li>Redux</li>
                     </ul> */}
                     Javascript &middot; Node &middot; Express &middot; React
-                    &middot; Redux
+                    &middot; Redux &middot; Postgres
                   </div>
                 </div>
               </div>
