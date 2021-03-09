@@ -54,6 +54,23 @@ body {
   border-top: solid 4px #990b52;
 }
 
+.bio-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-photo-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.puppy-photo {
+  height: 400px;
+  width: auto;
+}
+
 .bio {
   margin-top: 5%;
   width: 50%;

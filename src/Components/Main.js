@@ -1,4 +1,5 @@
 import React from "react";
+import puppy from "./puppy.png";
 
 const Main = () => {
   return (
@@ -7,20 +8,29 @@ const Main = () => {
         <div className="hello">Mackenzie Kroon</div>
         <div>
           <div className="software-engineer">Software Engineer</div>
-          <p className="bio">
-            Doggo ipsum borking doggo doggo maximum borkdrive doggorino very
-            hand that feed shibe doing me a frighten tungg, very hand that feed
-          </p>
-          <p className="bio">
-            shibe pupper floofs waggy wags. Borkf I am bekom fat you are doin me
-            a concern smol doing me a frighten corgo borking doggo shoob, what a
-            nice floof blop clouds h*ck heckin good boys and girls.
-          </p>
+          <div className="bio-content">
+            <div className="bio">
+              <p>
+                Doggo ipsum borking doggo doggo maximum borkdrive doggorino very
+                hand that feed shibe doing me a frighten tungg, very hand that
+                feed
+              </p>
+              <p>
+                shibe pupper floofs waggy wags. Borkf I am bekom fat you are
+                doin me a concern smol doing me a frighten corgo borking doggo
+                shoob, what a nice floof blop clouds h*ck heckin good boys and
+                girls.
+              </p>
 
-          <p className="bio">
-            Heckin doggo smol borking doggo with a long snoot for pats,
-            borkdrive. Doing me a frighten ruff pupperino waggy wags
-          </p>
+              <p>
+                Heckin doggo smol borking doggo with a long snoot for pats,
+                borkdrive. Doing me a frighten ruff pupperino waggy wags
+              </p>
+            </div>
+            <div className="profile-photo-container">
+              <img className="puppy-photo" alt="puppy" src={puppy} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
