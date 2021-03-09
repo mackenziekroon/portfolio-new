@@ -6,13 +6,21 @@ body {
 .header {
   background-color: #a6ac72;
   padding: 15px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-direction: row;
+  /* align-content: center; */
 }
 
 .nav-bar {
   display: flex;
+  align-self: flex-start;
   flex-direction: row;
-  width: 70%;
+  flex-grow: 6;
   justify-content: space-evenly;
+  /* align-content: center; */
+  width: 500px;
+  color: #f1f4f9;
 }
 
 .heading-container {
@@ -353,8 +361,10 @@ body {
 
 .links-container {
   display: flex;
+  align-self: flex-end;
   justify-content: flex-end;
   margin-right: 5%;
+  width: 20%;
 }
 
 a {
