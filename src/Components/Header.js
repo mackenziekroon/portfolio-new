@@ -6,6 +6,11 @@ const Header = (props) => {
   return (
     <div className="header">
       <div>
+        <div className="nav-bar">
+          <div>Home</div>
+          <div>Projects</div>
+          <div>Contact Me</div>
+        </div>
         <div className="links-container">
           <a
             href="https://www.linkedin.com/in/mackenziekroon/"

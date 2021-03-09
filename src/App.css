@@ -1,12 +1,18 @@
 body {
   background-color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .header {
-  background-color: #022450;
-
+  background-color: #a6ac72;
   padding: 15px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-evenly;
 }
 
 .heading-container {
@@ -15,7 +21,7 @@ body {
 }
 
 .heading {
-  color: #71093b;
+  color: black;
   margin-left: 5%;
   margin-top: 5%;
   margin-right: 5%;
@@ -23,10 +29,12 @@ body {
 
 .hello {
   font-size: 50px;
+  font-variant: small-caps;
 }
 
 .software-engineer {
   font-size: 40px;
+  font-variant: small-caps;
 }
 
 .line-border {
@@ -34,6 +42,18 @@ body {
   padding-top: 1%;
   border-bottom: solid 4px #990b52;
   border-top: solid 4px #990b52;
+}
+
+.bio {
+  margin-top: 5%;
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .bio {
+    width: 100%;
+    margin-top: 10%;
+  }
 }
 
 .projects-container {
