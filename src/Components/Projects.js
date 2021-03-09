@@ -42,23 +42,25 @@ class Projects extends React.Component {
                 <div>
                   {/* THIS IS THE FRONT OF THE CARD */}
                   <button onClick={this.handleClick} className="project-pods">
-                    <strong>seekr</strong>
-
+                    <div className="projects-title">seekr</div>
                     <p>
                       A PWA that allows candidates and recruiters to connect
                     </p>
-                    <p>*Details*</p>
+                    <p className="card-detail-btn">Click for details</p>
                   </button>
                 </div>
                 <div>
                   {/* THIS IS THE BACK OF THE CARD */}
-                  <button onClick={this.handleClick} className="project-pods">
-                    <img
+                  <button
+                    onClick={this.handleClick}
+                    className="project-pods-back"
+                  >
+                    {/* <img
                       className="seekr-img"
                       id="image-one"
                       alt=""
                       src={seekrScreen}
-                    />
+                    /> */}
                     <p>
                       Javascript &middot; Node &middot; Express &middot; React
                       &middot; Redux &middot; Postgres

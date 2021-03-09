@@ -132,12 +132,12 @@ body {
   /* margin-bottom: 5%; */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 975px) {
   .projects {
     flex-direction: column;
     justify-content: safe;
-    height: 75%;
-    margin-top: 10%;
+    height: 70%;
+    margin-top: 20%;
   }
   .seekr-content {
     flex-direction: column;
@@ -170,6 +170,52 @@ body {
 }
 
 .project-pods {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  /* height: 450px; */
+  /* width: 320px; */
+  height: 22em;
+  width: 16em;
+  border-radius: 15%;
+  border: solid 3px white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.projects-title {
+  justify-content: center;
+  width: 100%;
+  font-size: xx-large;
+  color: #707345;
+}
+
+.card-detail-btn {
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: small;
+}
+
+@media only screen and (max-width: 975px) {
+  .project-pods {
+    height: 11em;
+    width: 13em;
+    margin-bottom: 5%;
+    border-radius: 50%;
+  }
+}
+
+.project-pods:hover {
+  border: solid 2px #b6bb8b;
+}
+
+.project-pods-back {
   background-color: white;
   color: black;
   font-size: 20px;
@@ -180,19 +226,6 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-right: 1%;
   padding-left: 1%;
-}
-
-@media only screen and (max-width: 600px) {
-  .project-pods {
-    height: 200px;
-    width: 350px;
-    margin-bottom: 5%;
-    border-radius: 80%;
-  }
-}
-
-.project-pods:hover {
-  border: solid 2px #b6bb8b;
 }
 
 .pup-quiz {
@@ -239,13 +272,13 @@ body {
 }
 
 .contact-container {
-  background-color: #edebe4;
+  background-color: white;
   height: 100vh;
   width: 100vw;
 }
 
 .contact-form-container {
-  color: #2b764c;
+  color: black;
   margin-left: 5%;
   margin-top: 5%;
 }
@@ -340,16 +373,10 @@ body {
 }
 
 .links-circle {
-  /* margin-bottom: 20%;
-  margin-right: 5%;
-  margin-left: 5%; */
-  padding: 5%;
   width: 300px;
   height: 60px;
   color: #edebe4;
   text-decoration: none;
-  /* border-radius: 50%; */
-  /* background-color: #2b764c; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
