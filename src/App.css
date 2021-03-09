@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-  background-color: #a6ac72;
+  background-color: #b6bb8b;
   padding: 15px;
   display: flex;
   flex-direction: row;
@@ -15,14 +15,22 @@ body {
 
 .nav-bar {
   display: flex;
-  align-self: flex-start;
   flex-direction: row;
-  flex-grow: 6;
-  justify-content: space-evenly;
+  flex-grow: 1;
+  /* justify-content: space-evenly; */
   width: 500px;
   color: #f1f4f9;
-  margin: 0;
-  padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    display: none;
+  }
+}
+
+.headings {
+  margin-right: 10px;
+  margin-left: 60px;
 }
 
 .heading-container {
@@ -42,9 +50,21 @@ body {
   font-variant: small-caps;
 }
 
+@media only screen and (max-width: 600px) {
+  .hello {
+    font-size: 50px;
+  }
+}
+
 .software-engineer {
   font-size: 40px;
   font-variant: small-caps;
+}
+
+@media only screen and (max-width: 600px) {
+  .software-engineer {
+    font-size: 35px;
+  }
 }
 
 .line-border {
@@ -98,7 +118,7 @@ body {
 .project-title {
   padding-top: 3%;
   padding-left: 5%;
-  font-size: xx-large;
+  font-size: 75px;
   color: #edebe4;
   /* font-variant: small-caps; */
 }
@@ -108,8 +128,9 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 100vw;
-  height: 100vh;
-  margin-bottom: 5%;
+  height: 80vh;
+  /* margin-bottom: 5%; */
+  /* overflow: hidden; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -149,26 +170,28 @@ body {
   text-align: center;
 }
 
-.seekr {
-  background-color: #edebe4;
-  color: #2b764c;
+.project-pods {
+  background-color: white;
+  color: black;
   font-size: 20px;
-  height: 400px;
-  width: 300px;
-  border-radius: 37% 63% 44% 56% / 23% 48% 52% 77%;
-  /* border: solid 3px darkslategray; */
+  height: 450px;
+  width: 320px;
+  border-radius: 15%;
+  border: solid 3px white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 600px) {
-  .seekr {
-    height: 175px;
-    width: 300px;
+  .project-pods {
+    height: 200px;
+    width: 350px;
     margin-bottom: 5%;
+    border-radius: 37% 63% 44% 56% / 23% 48% 52% 77%;
   }
 }
 
-.seekr:hover {
-  /* border: solid 7px #1e5234; */
+.project-pods:hover {
+  border: solid 7px #1e5234;
 }
 
 .pup-quiz {
@@ -390,6 +413,13 @@ body {
   justify-content: flex-end;
   margin-right: 5%;
   width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .links-container {
+    width: 100%;
+    margin-right: 5%;
+  }
 }
 
 a {

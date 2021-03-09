@@ -6,9 +6,9 @@ const Header = (props) => {
   return (
     <div className="header">
       <div className="nav-bar">
-        <div>Home</div>
-        <div>Projects</div>
-        <div>Contact Me</div>
+        <div className="headings">Home</div>
+        <div className="headings">Projects</div>
+        <div className="headings">Contact Me</div>
       </div>
       <div className="links-container">
         <a
