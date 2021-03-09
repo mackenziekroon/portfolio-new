@@ -4,6 +4,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import HttpIcon from "@material-ui/icons/Http";
 import ReactCardFlip from "react-card-flip";
+import seekrScreen from "../seekrScreen.png";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -38,16 +39,26 @@ class Projects extends React.Component {
                 isFlipped={this.state.isFlipped}
                 flipDirection="vertical"
               >
-                <front>
+                <div>
+                  {/* THIS IS THE FRONT OF THE CARD */}
                   <button onClick={this.handleClick} className="project-pods">
                     <strong>seekr</strong>
+
                     <p>
                       A PWA that allows candidates and recruiters to connect
                     </p>
+                    <p>*Details*</p>
                   </button>
-                </front>
-                <back>
+                </div>
+                <div>
+                  {/* THIS IS THE BACK OF THE CARD */}
                   <button onClick={this.handleClick} className="project-pods">
+                    <img
+                      className="seekr-img"
+                      id="image-one"
+                      alt=""
+                      src={seekrScreen}
+                    />
                     <p>
                       Javascript &middot; Node &middot; Express &middot; React
                       &middot; Redux &middot; Postgres
@@ -59,7 +70,7 @@ class Projects extends React.Component {
                           href="https://seekr-capstone.herokuapp.com/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          style={{ color: "#2b764c" }}
+                          style={{ color: "#b6bb8b" }}
                         >
                           <HttpIcon fontSize="large" />
                         </a>
@@ -70,7 +81,7 @@ class Projects extends React.Component {
                           href="https://www.youtube.com/watch?v=ByWsbggwCiM&list=PLx0iOsdUOUml9uxVlTFGdM_l9MC2GqwBA&index=7"
                           target="_blank"
                           rel="noopener noreferrer"
-                          style={{ color: "#2b764c" }}
+                          style={{ color: "#b6bb8b" }}
                         >
                           <YouTubeIcon fontSize="large" />
                         </a>
@@ -81,14 +92,14 @@ class Projects extends React.Component {
                           href="https://github.com/Job-application-app-GH/job-app"
                           target="_blank"
                           rel="noopener noreferrer"
-                          style={{ color: "#2b764c" }}
+                          style={{ color: "#b6bb8b" }}
                         >
                           <GitHubIcon fontSize="large" />
                         </a>
                       </div>
                     </div>
                   </button>
-                </back>
+                </div>
               </ReactCardFlip>
             </div>
             {this.state.seekrOpen ? (
