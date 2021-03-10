@@ -5,7 +5,7 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import HttpIcon from "@material-ui/icons/Http";
 import ReactCardFlip from "react-card-flip";
 import seekrScreen from "../seekrScreen.png";
-import { Divider } from "@material-ui/core";
+import ecom1 from "./ecom1.png";
 
 class Juicery extends React.Component {
   constructor(props) {
@@ -31,6 +31,12 @@ class Juicery extends React.Component {
           <div>
             {/* THIS IS THE FRONT OF THE CARD */}
             <button className="project-pods">
+              <img
+                className="img-container"
+                // id="image-one"
+                alt=""
+                src={ecom1}
+              />
               <div className="projects-title">Frutify Juicery</div>
               <p> A mock e-commerce web application that sells juices</p>
 

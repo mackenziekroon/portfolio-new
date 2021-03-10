@@ -5,6 +5,7 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import HttpIcon from "@material-ui/icons/Http";
 import ReactCardFlip from "react-card-flip";
 import seekrScreen from "../seekrScreen.png";
+import pupquiz from "./pupquiz.png";
 
 class PupQuiz extends React.Component {
   constructor(props) {
@@ -30,6 +31,12 @@ class PupQuiz extends React.Component {
           <div>
             {/* THIS IS THE FRONT OF THE CARD */}
             <button className="project-pods">
+              <img
+                className="img-container"
+                // id="image-one"
+                alt=""
+                src={pupquiz}
+              />
               <div className="projects-title">Pup Quiz</div>
               <p>A mobile app that tests users' knowledge of dog breeds</p>
               <p onClick={this.handleClick} className="card-detail-btn">
