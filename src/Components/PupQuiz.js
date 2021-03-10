@@ -54,8 +54,8 @@ class PupQuiz extends React.Component {
               src={seekrScreen}
             /> */}
               <p>
-                Javascript &middot; Node &middot; Express &middot; React
-                &middot; Redux &middot; Postgres
+                React Native &middot; Javascript &middot; Node &middot; Express
+                &middot; Postgres
               </p>
               <div className="links-circle">
                 <div className="seekr-github">
