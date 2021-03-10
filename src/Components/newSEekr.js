@@ -5,6 +5,7 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import HttpIcon from "@material-ui/icons/Http";
 import ReactCardFlip from "react-card-flip";
 import seekrScreen from "../seekrScreen.png";
+import seekr1 from "./seekr1.png";
 
 class TempSeekr extends React.Component {
   constructor(props) {
@@ -30,8 +31,17 @@ class TempSeekr extends React.Component {
           <div>
             {/* THIS IS THE FRONT OF THE CARD */}
             <button className="project-pods">
-              <div className="projects-title">seekr</div>
-              <p>A PWA that allows candidates and recruiters to connect</p>
+              {/* <img
+                  className="seekr-img"
+                  // id="image-one"
+                  alt=""
+                  src={seekr1}
+                /> */}
+              <div className="img-container"></div>
+              <div>
+                <div className="projects-title">seekr</div>
+                <p>A PWA that allows candidates and recruiters to connect</p>
+              </div>
               <p onClick={this.handleClick} className="card-detail-btn">
                 Click for details
               </p>
@@ -40,12 +50,6 @@ class TempSeekr extends React.Component {
           <div>
             {/* THIS IS THE BACK OF THE CARD */}
             <button className="project-pods-back">
-              {/* <img
-              className="seekr-img"
-              id="image-one"
-              alt=""
-              src={seekrScreen}
-            /> */}
               <p>
                 Javascript &middot; Node &middot; Express &middot; React
                 &middot; Redux &middot; Postgres
