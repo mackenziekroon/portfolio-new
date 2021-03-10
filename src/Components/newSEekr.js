@@ -31,13 +31,13 @@ class TempSeekr extends React.Component {
           <div>
             {/* THIS IS THE FRONT OF THE CARD */}
             <button className="project-pods">
-              {/* <img
-                  className="seekr-img"
-                  // id="image-one"
-                  alt=""
-                  src={seekr1}
-                /> */}
-              <div className="img-container"></div>
+              <img
+                className="img-container"
+                // id="image-one"
+                alt=""
+                src={seekr1}
+              />
+              {/* <div className="img-container"></div> */}
               <div>
                 <div className="projects-title">seekr</div>
                 <p>A PWA that allows candidates and recruiters to connect</p>
