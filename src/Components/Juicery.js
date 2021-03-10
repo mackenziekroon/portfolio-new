@@ -38,12 +38,6 @@ class Juicery extends React.Component {
           <div>
             {/* THIS IS THE BACK OF THE CARD */}
             <button onClick={this.handleClick} className="project-pods-back">
-              {/* <img
-              className="seekr-img"
-              id="image-one"
-              alt=""
-              src={seekrScreen}
-            /> */}
               <p>
                 Javascript &middot; Node &middot; Express &middot; React
                 &middot; Redux &middot; Postgres
@@ -52,7 +46,7 @@ class Juicery extends React.Component {
                 <div className="seekr-website">
                   <a
                     className="links"
-                    href="https://seekr-capstone.herokuapp.com/"
+                    href="https://graceshopper-juicify.herokuapp.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: "#b6bb8b" }}
@@ -60,21 +54,11 @@ class Juicery extends React.Component {
                     <HttpIcon fontSize="large" />
                   </a>
                 </div>
-                <div className="seekr-demo">
-                  <a
-                    className="links"
-                    href="https://www.youtube.com/watch?v=ByWsbggwCiM&list=PLx0iOsdUOUml9uxVlTFGdM_l9MC2GqwBA&index=7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#b6bb8b" }}
-                  >
-                    <YouTubeIcon fontSize="large" />
-                  </a>
-                </div>
+
                 <div className="seekr-github">
                   <a
                     className="links"
-                    href="https://github.com/Job-application-app-GH/job-app"
+                    href="https://github.com/grace-shopper-fruit-for-loops/graceshopper"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: "#b6bb8b" }}
