@@ -29,15 +29,17 @@ class TempSeekr extends React.Component {
         >
           <div>
             {/* THIS IS THE FRONT OF THE CARD */}
-            <button onClick={this.handleClick} className="project-pods">
+            <button className="project-pods">
               <div className="projects-title">seekr</div>
               <p>A PWA that allows candidates and recruiters to connect</p>
-              <p className="card-detail-btn">Click for details</p>
+              <p onClick={this.handleClick} className="card-detail-btn">
+                Click for details
+              </p>
             </button>
           </div>
           <div>
             {/* THIS IS THE BACK OF THE CARD */}
-            <button onClick={this.handleClick} className="project-pods-back">
+            <button className="project-pods-back">
               {/* <img
               className="seekr-img"
               id="image-one"
@@ -83,6 +85,7 @@ class TempSeekr extends React.Component {
                   </a>
                 </div>
               </div>
+              <p onClick={this.handleClick}>Flip Back</p>
             </button>
           </div>
         </ReactCardFlip>

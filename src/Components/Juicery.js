@@ -29,15 +29,18 @@ class Juicery extends React.Component {
         >
           <div>
             {/* THIS IS THE FRONT OF THE CARD */}
-            <button onClick={this.handleClick} className="project-pods">
+            <button className="project-pods">
               <div className="projects-title">Frutify Juicery</div>
               <p> A mock e-commerce web application that sells juices</p>
-              <p className="card-detail-btn">Click for details</p>
+
+              <p onClick={this.handleClick} className="card-detail-btn">
+                Click for details
+              </p>
             </button>
           </div>
           <div>
             {/* THIS IS THE BACK OF THE CARD */}
-            <button onClick={this.handleClick} className="project-pods-back">
+            <button className="project-pods-back">
               <p>
                 Javascript &middot; Node &middot; Express &middot; React
                 &middot; Redux &middot; Postgres
@@ -67,6 +70,7 @@ class Juicery extends React.Component {
                   </a>
                 </div>
               </div>
+              <p onClick={this.handleClick}>Flip Back</p>
             </button>
           </div>
         </ReactCardFlip>
