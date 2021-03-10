@@ -5,6 +5,7 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import HttpIcon from "@material-ui/icons/Http";
 import ReactCardFlip from "react-card-flip";
 import seekrScreen from "../seekrScreen.png";
+import { Divider } from "@material-ui/core";
 
 class Juicery extends React.Component {
   constructor(props) {
@@ -33,9 +34,9 @@ class Juicery extends React.Component {
               <div className="projects-title">Frutify Juicery</div>
               <p> A mock e-commerce web application that sells juices</p>
 
-              <p onClick={this.handleClick} className="card-detail-btn">
-                Click for details
-              </p>
+              <div onClick={this.handleClick} className="card-detail-btn">
+                <p>Click for details</p>
+              </div>
             </button>
           </div>
           <div>
@@ -70,7 +71,9 @@ class Juicery extends React.Component {
                   </a>
                 </div>
               </div>
-              <p onClick={this.handleClick}>Flip Back</p>
+              <p className="card-detail-btn" onClick={this.handleClick}>
+                Return
+              </p>
             </button>
           </div>
         </ReactCardFlip>

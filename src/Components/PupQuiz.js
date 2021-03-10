@@ -63,7 +63,9 @@ class PupQuiz extends React.Component {
                   </a>
                 </div>
               </div>
-              <p onClick={this.handleClick}>Flip Back</p>
+              <p className="card-detail-btn" onClick={this.handleClick}>
+                Flip Back
+              </p>
             </button>
           </div>
         </ReactCardFlip>
