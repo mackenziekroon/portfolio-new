@@ -71,9 +71,9 @@ class Juicery extends React.Component {
                   </a>
                 </div>
               </div>
-              <p className="card-detail-btn" onClick={this.handleClick}>
-                Return
-              </p>
+              <div className="card-detail-btn" onClick={this.handleClick}>
+                <p className="btn-text">Flip Back</p>
+              </div>
             </button>
           </div>
         </ReactCardFlip>

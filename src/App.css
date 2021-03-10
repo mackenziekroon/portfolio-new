@@ -195,13 +195,15 @@ body {
 }
 
 .card-detail-btn {
+  display: flex;
   justify-content: center;
   align-content: flex-end;
   position: fixed;
   width: 100%;
   bottom: 0;
-  height: 100px;
+  height: 120px;
   font-size: medium;
+  align-items: flex-end;
 }
 
 @media only screen and (max-width: 975px) {
