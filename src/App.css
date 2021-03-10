@@ -3,6 +3,10 @@ body {
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
 
+button {
+  padding: 0;
+}
+
 .header {
   background-color: #b6bb8b;
   padding: 15px;
@@ -123,6 +127,11 @@ body {
   /* font-variant: small-caps; */
 }
 
+.project-desc {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
 .projects {
   display: flex;
   justify-content: space-evenly;
@@ -181,10 +190,10 @@ body {
   height: 22em;
   width: 16em;
   border-radius: 15%;
-  border: solid 3px white;
+  border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding-right: 1%;
-  padding-left: 1%;
+  /* padding-right: 1%;
+  padding-left: 1%; */
   overflow: hidden;
 }
 

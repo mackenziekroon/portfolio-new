@@ -40,7 +40,9 @@ class TempSeekr extends React.Component {
               {/* <div className="img-container"></div> */}
               <div>
                 <div className="projects-title">seekr</div>
-                <p>A PWA that allows candidates and recruiters to connect</p>
+                <p className="project-desc">
+                  A PWA that allows candidates and recruiters to connect
+                </p>
               </div>
               <p onClick={this.handleClick} className="card-detail-btn">
                 Click for details
