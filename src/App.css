@@ -159,7 +159,7 @@ button {
   .projects {
     flex-direction: column;
     justify-content: safe;
-    height: 120vh;
+    min-height: 120vh;
     margin-top: 2em;
     margin-bottom: 2em;
   }
@@ -234,8 +234,8 @@ button {
 
 @media only screen and (max-width: 1024px) {
   .project-pods {
-    height: 16em;
-    width: 12em;
+    height: 30%;
+    width: 80%;
     margin-bottom: 10%;
     border-radius: 15%;
   }
@@ -243,6 +243,12 @@ button {
 
 .project-pods:hover {
   border: solid 2px #b6bb8b;
+}
+
+@media only screen and (max-width: 1024px) {
+  .project-pods:hover {
+    border: none;
+  }
 }
 
 .project-pods-back {
@@ -263,7 +269,7 @@ button {
     display: flex;
     height: 16em;
     width: 12em;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     border-radius: 15%;
   }
 }
@@ -519,12 +525,13 @@ button {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   padding-left: 3px;
   padding-right: 3px;
   padding-top: 3px;
 }
 
 a:visited {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: #f1f4f9;
 }
