@@ -48,7 +48,7 @@ class Juicery extends React.Component {
           <div>
             {/* THIS IS THE BACK OF THE CARD */}
             <button className="project-pods-back">
-              <p>
+              <p className="tech-stack">
                 Javascript &middot; Node &middot; Express &middot; React
                 &middot; Redux &middot; Postgres
               </p>
