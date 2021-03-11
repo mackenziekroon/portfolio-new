@@ -230,6 +230,7 @@ button {
   height: 120px;
   font-size: medium;
   align-items: flex-end;
+  color: #b6bb8b;
 }
 
 @media only screen and (max-width: 1024px) {

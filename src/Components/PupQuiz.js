@@ -48,10 +48,15 @@ class PupQuiz extends React.Component {
             {/* THIS IS THE BACK OF THE CARD */}
             <button className="project-pods-back">
               <div className="pods-content-back">
-                <p className="tech-stack">
-                  React Native &middot; Javascript &middot; Node &middot;
-                  Express &middot; Postgres
-                </p>
+                <div className="tech-group">
+                  <div className="tech">React Native</div>
+                  <div className="tech">Javascript</div>
+
+                  <div className="tech">Node</div>
+                  <div className="tech">Express</div>
+                  <div className="tech">Postgres</div>
+                </div>
+
                 <div className="links-circle">
                   <div className="seekr-github">
                     <a

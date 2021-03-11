@@ -61,10 +61,7 @@ class TempSeekr extends React.Component {
                   <div className="tech">Express</div>
                   <div className="tech">Postgres</div>
                 </div>
-                {/* <p className="tech-stack">
-                  Javascript &middot; Node &middot; Express &middot; React
-                  &middot; Redux &middot; Postgres
-                </p> */}
+
                 <div className="links-circle">
                   <div className="seekr-website">
                     <a
