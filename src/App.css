@@ -242,7 +242,7 @@ button {
 @media only screen and (max-width: 1024px) {
   .card-detail-btn {
     height: 30px;
-    /* padding-bottom: 5%; */
+    padding-bottom: 5%;
     margin-bottom: 5%;
     /* background-color: rosybrown; */
   }
@@ -262,7 +262,6 @@ button {
     font-size: medium;
     margin-top: 1%;
     margin-bottom: 3%;
-    background-color: royalblue;
   }
 }
 
