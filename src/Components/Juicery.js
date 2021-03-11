@@ -48,33 +48,35 @@ class Juicery extends React.Component {
           <div>
             {/* THIS IS THE BACK OF THE CARD */}
             <button className="project-pods-back">
-              <p className="tech-stack">
-                Javascript &middot; Node &middot; Express &middot; React
-                &middot; Redux &middot; Postgres
-              </p>
-              <div className="links-circle">
-                <div className="seekr-website">
-                  <a
-                    className="links"
-                    href="https://graceshopper-juicify.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#b6bb8b" }}
-                  >
-                    <HttpIcon fontSize="large" />
-                  </a>
-                </div>
+              <div className="pods-content-back">
+                <p className="tech-stack">
+                  Javascript &middot; Node &middot; Express &middot; React
+                  &middot; Redux &middot; Postgres
+                </p>
+                <div className="links-circle">
+                  <div className="seekr-website">
+                    <a
+                      className="links"
+                      href="https://graceshopper-juicify.herokuapp.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "#b6bb8b" }}
+                    >
+                      <HttpIcon fontSize="large" />
+                    </a>
+                  </div>
 
-                <div className="seekr-github">
-                  <a
-                    className="links"
-                    href="https://github.com/grace-shopper-fruit-for-loops/graceshopper"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#b6bb8b" }}
-                  >
-                    <GitHubIcon fontSize="large" />
-                  </a>
+                  <div className="seekr-github">
+                    <a
+                      className="links"
+                      href="https://github.com/grace-shopper-fruit-for-loops/graceshopper"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "#b6bb8b" }}
+                    >
+                      <GitHubIcon fontSize="large" />
+                    </a>
+                  </div>
                 </div>
               </div>
               <p className="card-detail-btn" onClick={this.handleClick}>

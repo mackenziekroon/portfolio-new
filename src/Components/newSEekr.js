@@ -52,43 +52,45 @@ class TempSeekr extends React.Component {
           <div>
             {/* THIS IS THE BACK OF THE CARD */}
             <button className="project-pods-back">
-              <p>
-                Javascript &middot; Node &middot; Express &middot; React
-                &middot; Redux &middot; Postgres
-              </p>
-              <div className="links-circle">
-                <div className="seekr-website">
-                  <a
-                    className="links"
-                    href="https://seekr-capstone.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#b6bb8b" }}
-                  >
-                    <HttpIcon fontSize="large" />
-                  </a>
-                </div>
-                <div className="seekr-demo">
-                  <a
-                    className="links"
-                    href="https://www.youtube.com/watch?v=ByWsbggwCiM&list=PLx0iOsdUOUml9uxVlTFGdM_l9MC2GqwBA&index=7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#b6bb8b" }}
-                  >
-                    <YouTubeIcon fontSize="large" />
-                  </a>
-                </div>
-                <div className="seekr-github">
-                  <a
-                    className="links"
-                    href="https://github.com/Job-application-app-GH/job-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#b6bb8b" }}
-                  >
-                    <GitHubIcon fontSize="large" />
-                  </a>
+              <div className="pods-content-back">
+                <p className="tech-stack">
+                  Javascript &middot; Node &middot; Express &middot; React
+                  &middot; Redux &middot; Postgres
+                </p>
+                <div className="links-circle">
+                  <div className="seekr-website">
+                    <a
+                      className="links"
+                      href="https://seekr-capstone.herokuapp.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "#b6bb8b" }}
+                    >
+                      <HttpIcon fontSize="large" />
+                    </a>
+                  </div>
+                  <div className="seekr-demo">
+                    <a
+                      className="links"
+                      href="https://www.youtube.com/watch?v=ByWsbggwCiM&list=PLx0iOsdUOUml9uxVlTFGdM_l9MC2GqwBA&index=7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "#b6bb8b" }}
+                    >
+                      <YouTubeIcon fontSize="large" />
+                    </a>
+                  </div>
+                  <div className="seekr-github">
+                    <a
+                      className="links"
+                      href="https://github.com/Job-application-app-GH/job-app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "#b6bb8b" }}
+                    >
+                      <GitHubIcon fontSize="large" />
+                    </a>
+                  </div>
                 </div>
               </div>
               <p className="card-detail-btn" onClick={this.handleClick}>

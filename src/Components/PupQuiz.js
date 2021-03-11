@@ -47,27 +47,23 @@ class PupQuiz extends React.Component {
           <div>
             {/* THIS IS THE BACK OF THE CARD */}
             <button className="project-pods-back">
-              {/* <img
-              className="seekr-img"
-              id="image-one"
-              alt=""
-              src={seekrScreen}
-            /> */}
-              <p>
-                React Native &middot; Javascript &middot; Node &middot; Express
-                &middot; Postgres
-              </p>
-              <div className="links-circle">
-                <div className="seekr-github">
-                  <a
-                    className="links"
-                    href="https://github.com/mackenziekroon/stackathon_project"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#b6bb8b" }}
-                  >
-                    <GitHubIcon fontSize="large" />
-                  </a>
+              <div className="pods-content-back">
+                <p className="tech-stack">
+                  React Native &middot; Javascript &middot; Node &middot;
+                  Express &middot; Postgres
+                </p>
+                <div className="links-circle">
+                  <div className="seekr-github">
+                    <a
+                      className="links"
+                      href="https://github.com/mackenziekroon/stackathon_project"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "#b6bb8b" }}
+                    >
+                      <GitHubIcon fontSize="large" />
+                    </a>
+                  </div>
                 </div>
               </div>
               <p className="card-detail-btn" onClick={this.handleClick}>
