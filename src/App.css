@@ -76,13 +76,6 @@ button {
   }
 }
 
-.line-border {
-  padding-bottom: 1%;
-  padding-top: 1%;
-  border-bottom: solid 4px #990b52;
-  border-top: solid 4px #990b52;
-}
-
 .bio-content {
   display: flex;
   flex-direction: row;
@@ -169,14 +162,6 @@ button {
     height: 75%;
     margin-top: 10%;
     align-content: center;
-  }
-  .seekr-links {
-    margin-bottom: 2%;
-    margin-right: 15%;
-    /* width: 30%;
-    height: 100%; */
-    color: yellow;
-    text-decoration: none;
   }
 }
 
