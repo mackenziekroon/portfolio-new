@@ -26,7 +26,7 @@ button {
   color: #f1f4f9;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .nav-bar {
     display: none;
   }
@@ -54,7 +54,7 @@ button {
   font-variant: small-caps;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .hello {
     font-size: 50px;
   }
@@ -65,7 +65,7 @@ button {
   font-variant: small-caps;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .software-engineer {
     font-size: 35px;
   }
@@ -95,7 +95,7 @@ button {
   width: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .profile-photo-container {
     display: none;
   }
@@ -106,7 +106,7 @@ button {
   width: 50%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .bio {
     width: 100%;
     margin-top: 10%;
@@ -120,10 +120,11 @@ button {
   width: 100vw;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .projects-container {
-    height: 200vh;
-    width: 100vh;
+    /* padding-top: 5em; */
+    height: 150vh;
+    width: 100vw;
   }
 }
 
@@ -149,12 +150,13 @@ button {
   /* margin-bottom: 5%; */
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1024px) {
   .projects {
     flex-direction: column;
     justify-content: safe;
-    height: 70%;
-    margin-top: 20%;
+    height: 120vh;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
   .seekr-content {
     flex-direction: column;
@@ -225,11 +227,11 @@ button {
   align-items: flex-end;
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1024px) {
   .project-pods {
-    height: 22em;
-    width: 16em;
-    margin-bottom: 5%;
+    height: 16em;
+    width: 12em;
+    margin-bottom: 10%;
     border-radius: 15%;
   }
 }
@@ -261,7 +263,7 @@ button {
   border: solid 3px darkslategray;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .pup-quiz {
     height: 175px;
     width: 300px;
@@ -283,7 +285,7 @@ button {
   border: solid 3px darkslategray;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .fruitfy-juicery {
     height: 175px;
     width: 300px;
@@ -333,7 +335,7 @@ button {
   flex-direction: row;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .seekr-content {
     display: flex;
     align-items: center;
@@ -359,7 +361,7 @@ button {
   /* background-color: rosybrown; */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .seekr-details {
     display: flex;
     flex-direction: column-reverse;
@@ -381,7 +383,7 @@ button {
   border-radius: 15% 15% 0 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .seekr-img {
     height: 375px;
     width: auto;
@@ -389,7 +391,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   #image-one {
     display: none;
   }
@@ -413,7 +415,7 @@ button {
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024) {
   .links-circle {
     margin-bottom: 20%;
     /* margin-right: 15%; */
@@ -473,7 +475,7 @@ button {
   width: 20%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .links-container {
     width: 100%;
     margin-right: 5%;

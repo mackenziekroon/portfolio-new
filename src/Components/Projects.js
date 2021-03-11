@@ -28,7 +28,7 @@ class Projects extends React.Component {
   render() {
     return (
       <div>
-        <div className="projects-container">
+        <div id="projects" className="projects-container">
           <div className="project-title">Projects</div>
           <div className="projects">
             <TempSeekr />
