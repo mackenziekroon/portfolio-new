@@ -251,7 +251,9 @@ button {
 }
 
 .project-pods:hover {
-  border: solid 2px #b6bb8b;
+  /* border: solid 2px #b6bb8b; */
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2),
+    0 20px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -559,6 +561,7 @@ a {
   padding-left: 3px;
   padding-right: 3px;
   padding-top: 3px;
+  color: #f1f4f9;
 }
 
 a:visited {
