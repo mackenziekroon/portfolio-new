@@ -470,6 +470,20 @@ button {
   margin-right: 5%;
 }
 
+.tech-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech {
+  border: 2px solid #b6bb8b;
+  color: #b6bb8b;
+  padding: 5px;
+  margin: 2px;
+}
+
 .seekr-demo {
   font-size: 20px;
 }

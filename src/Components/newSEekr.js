@@ -53,10 +53,18 @@ class TempSeekr extends React.Component {
             {/* THIS IS THE BACK OF THE CARD */}
             <button className="project-pods-back">
               <div className="pods-content-back">
-                <p className="tech-stack">
+                <div className="tech-group">
+                  <div className="tech">Javascript</div>
+                  <div className="tech">React</div>
+                  <div className="tech">Redux</div>
+                  <div className="tech">Node</div>
+                  <div className="tech">Express</div>
+                  <div className="tech">Postgres</div>
+                </div>
+                {/* <p className="tech-stack">
                   Javascript &middot; Node &middot; Express &middot; React
                   &middot; Redux &middot; Postgres
-                </p>
+                </p> */}
                 <div className="links-circle">
                   <div className="seekr-website">
                     <a
