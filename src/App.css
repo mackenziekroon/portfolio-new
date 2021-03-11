@@ -154,7 +154,7 @@ button {
     justify-content: safe;
     /* min-height: 120vh; */
     margin-top: 2em;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
   }
   .seekr-content {
     flex-direction: column;
