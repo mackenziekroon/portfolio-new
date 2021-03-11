@@ -38,7 +38,9 @@ class PupQuiz extends React.Component {
                 src={pupquiz}
               />
               <div className="projects-title">Pup Quiz</div>
-              <p>A mobile app that tests users' knowledge of dog breeds</p>
+              <p className="project-desc">
+                A mobile app that tests users' knowledge of dog breeds
+              </p>
               <div onClick={this.handleClick} className="card-detail-btn">
                 <p>Click for details</p>
               </div>

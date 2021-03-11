@@ -135,8 +135,9 @@ button {
 }
 
 .project-desc {
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #707345;
 }
 
 .projects {
@@ -242,13 +243,13 @@ button {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
   .project-desc {
     font-size: medium;
     margin-top: 1%;
     margin-bottom: 3%;
   }
-}
+} */
 
 .project-pods:hover {
   /* border: solid 2px #b6bb8b; */
