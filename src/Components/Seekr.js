@@ -1,5 +1,6 @@
 import React from "react";
 import seekrScreen from "../seekrScreen.png";
+
 import seekrScreen2 from "../seekrScreen2.png";
 import seekrScreen3 from "../seekrScreen3.png";
 import GitHubIcon from "@material-ui/icons/GitHub";

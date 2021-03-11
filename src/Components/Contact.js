@@ -39,7 +39,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div>
-        <div className="contact-container">
+        <div id="contact" className="contact-container">
           <div className="contact-form-container">
             <h1>Let's get in touch</h1>
             <form onSubmit={this.submitEmail} method="POST">
