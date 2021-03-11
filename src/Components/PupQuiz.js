@@ -39,9 +39,9 @@ class PupQuiz extends React.Component {
               />
               <div className="projects-title">Pup Quiz</div>
               <p>A mobile app that tests users' knowledge of dog breeds</p>
-              <p onClick={this.handleClick} className="card-detail-btn">
-                Click for details
-              </p>
+              <div onClick={this.handleClick} className="card-detail-btn">
+                <p>Click for details</p>
+              </div>
             </button>
           </div>
           <div>
@@ -71,9 +71,9 @@ class PupQuiz extends React.Component {
                   </div>
                 </div>
               </div>
-              <p className="card-detail-btn" onClick={this.handleClick}>
-                Flip Back
-              </p>
+              <div onClick={this.handleClick} className="card-detail-btn">
+                <p>Flip Back</p>
+              </div>
             </button>
           </div>
         </ReactCardFlip>

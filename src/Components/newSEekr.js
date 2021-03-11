@@ -44,9 +44,9 @@ class TempSeekr extends React.Component {
                   A PWA that allows candidates and recruiters to connect
                 </p>
               </div>
-              <p onClick={this.handleClick} className="card-detail-btn">
-                Click for details
-              </p>
+              <div onClick={this.handleClick} className="card-detail-btn">
+                <p>Click for details</p>
+              </div>
             </button>
           </div>
           <div>
@@ -98,9 +98,9 @@ class TempSeekr extends React.Component {
                   </div>
                 </div>
               </div>
-              <p className="card-detail-btn" onClick={this.handleClick}>
-                Flip Back
-              </p>
+              <div onClick={this.handleClick} className="card-detail-btn">
+                <p>Flip Back</p>
+              </div>
             </button>
           </div>
         </ReactCardFlip>
