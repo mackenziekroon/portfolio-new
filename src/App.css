@@ -234,6 +234,12 @@ button {
 }
 
 @media only screen and (max-width: 1024px) {
+  .card-detail-btn {
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .project-pods {
     height: 20em;
     margin-bottom: 10%;
@@ -444,7 +450,7 @@ button {
 
 @media only screen and (max-width: 1024px) {
   .links-circle {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     height: 2em;
     margin-top: 7%;
     text-decoration: none;
