@@ -43,10 +43,8 @@ class Juicery extends React.Component {
                 A mock e-commerce web application that sells juices
               </p>
 
-              <div>
-                <p onClick={this.handleClick} className="card-detail-btn">
-                  Click for details
-                </p>
+              <div onClick={this.handleClick} className="card-detail-btn">
+                <p>Click for details</p>
               </div>
             </button>
           </div>
