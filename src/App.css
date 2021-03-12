@@ -79,6 +79,7 @@ button {
 .bio-content {
   display: flex;
   flex-direction: row;
+  font-family: "Alegreya Sans SC";
 }
 
 .profile-photo-container {
@@ -367,6 +368,7 @@ button {
   justify-content: center;
   /* padding-top: 5%; */
   padding-bottom: 10%;
+  font-family: "Alegreya Sans SC";
 }
 
 @media only screen and (max-width: 1024px) {
@@ -407,6 +409,7 @@ button {
   border: none;
   padding: 1em;
   justify-content: center;
+  font-family: "Alegreya Sans SC";
 }
 
 .seekr-modal {
