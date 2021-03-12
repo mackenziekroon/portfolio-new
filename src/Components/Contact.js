@@ -35,11 +35,9 @@ export default class ContactUs extends React.Component {
     this.setState({
       messageSent: true,
     });
-    console.log("after", this.state);
   }
 
   render() {
-    console.log("state:", this.state);
     return (
       <div>
         <div id="contact" className="contact-container">

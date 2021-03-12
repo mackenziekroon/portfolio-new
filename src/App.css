@@ -14,7 +14,7 @@ button {
 
 .header {
   background-color: #b6bb8b;
-  padding: 15px;
+  padding: 8px;
   display: flex;
   flex-direction: row;
   /* justify-content: center;
@@ -36,7 +36,7 @@ button {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  /* justify-content: space-evenly; */
+  font-family: "Alegreya Sans SC";
   width: 500px;
   color: #f1f4f9;
 }
@@ -67,7 +67,7 @@ button {
 .hello {
   font-size: 50px;
   font-variant: small-caps;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -141,7 +141,7 @@ button {
 }
 
 .project-title {
-  padding-top: 3%;
+  padding-top: 5%;
   padding-left: 5%;
   font-size: 75px;
   color: #f1f4f9;
@@ -219,7 +219,7 @@ button {
   width: 100%;
   font-size: xx-large;
   color: #707345;
-  margin-top: 10%;
+  margin-top: 12%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -373,7 +373,7 @@ button {
 
 .contact-container {
   background-color: white;
-  height: 90vh;
+  height: 75vh;
   width: 100%;
   display: flex;
   flex-flow: column;

@@ -30,7 +30,9 @@ class Header extends React.Component {
     return (
       <div className="header">
         <div className="nav-bar">
-          <div className="headings">Home</div>
+          <a href="#home" className="headings">
+            Home
+          </a>
           <a href="#projects" className="headings">
             Projects
           </a>

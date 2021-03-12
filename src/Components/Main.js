@@ -4,7 +4,7 @@ import design from "./design.png";
 
 const Main = () => {
   return (
-    <div className="heading-container">
+    <div id="home" className="heading-container">
       <div className="heading">
         <div className="hello">Mackenzie Kroon</div>
         <div>
