@@ -1,5 +1,6 @@
 import emailjs from "emailjs-com";
 import React from "react";
+import FormGroup from "@material-ui/core/FormGroup";
 
 export default function ContactUs() {
   function sendEmail(e) {
@@ -26,8 +27,11 @@ export default function ContactUs() {
 
   return (
     <div>
-      <div className="container">
-        <form onSubmit={sendEmail}>
+      <div id="contact" className="contact-container">
+        <div className="contact-msg">
+          Please reach out to discuss my projects or job opportunities!
+        </div>
+        <form className="contact-form-container" onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
               <input
@@ -35,6 +39,7 @@ export default function ContactUs() {
                 className="form-control"
                 placeholder="Name"
                 name="name"
+                required
               />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
@@ -43,6 +48,7 @@ export default function ContactUs() {
                 className="form-control"
                 placeholder="Email Address"
                 name="email"
+                required
               />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
@@ -51,6 +57,7 @@ export default function ContactUs() {
                 className="form-control"
                 placeholder="Subject"
                 name="subject"
+                required
               />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
@@ -61,12 +68,13 @@ export default function ContactUs() {
                 rows="8"
                 placeholder="Your message"
                 name="message"
+                required
               ></textarea>
             </div>
-            <div className="col-8 pt-3 mx-auto">
+            <div className="btn-container">
               <input
+                className="submit-btn"
                 type="submit"
-                className="btn btn-info"
                 value="Send Message"
               ></input>
             </div>
