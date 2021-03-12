@@ -1,7 +1,5 @@
 import emailjs from "emailjs-com";
 import React from "react";
-import FormGroup from "@material-ui/core/FormGroup";
-import { render } from "react-dom";
 
 export default class ContactUs extends React.Component {
   constructor(props) {
@@ -12,12 +10,8 @@ export default class ContactUs extends React.Component {
     this.sendEmail = this.sendEmail.bind(this);
   }
 
-  // handleClick(e) {
-  //   e.preventDefault();
-  //   this.setState((prevState) => ({ messageSent: !prevState.messageSent }));
-  // }
-
   sendEmail(e) {
+    console.log("before", this.state);
     e.preventDefault();
 
     emailjs
@@ -35,13 +29,17 @@ export default class ContactUs extends React.Component {
           console.log(error.text);
         }
       );
+
     e.target.reset();
-    this.setState((prevState) => ({
-      messageSent: !prevState.messageSent,
-    }));
+
+    this.setState({
+      messageSent: true,
+    });
+    console.log("after", this.state);
   }
 
   render() {
+    console.log("state:", this.state);
     return (
       <div>
         <div id="contact" className="contact-container">
@@ -95,10 +93,9 @@ export default class ContactUs extends React.Component {
                   value="Send Message"
                 ></input>
               </div>
-              {this.messageSent ? (
-                <div className="msg-sent">Message Sent!</div>
-              ) : null}
-              {/* <div >message sent!</div> */}
+              {this.state.messageSent && (
+                <div className="msg-sent">Thanks for your message!</div>
+              )}
             </div>
           </form>
         </div>
