@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Main />
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 }

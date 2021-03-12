@@ -1,82 +1,78 @@
+import emailjs from "emailjs-com";
 import React from "react";
-import axios from "axios";
 
-class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      message: "",
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.submitEmail = this.submitEmail.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({ [event.target.name]: event.target.value });
-  }
-
-  submitEmail(e) {
+export default function ContactUs() {
+  function sendEmail(e) {
     e.preventDefault();
-    axios({
-      method: "POST",
-      url: "/send",
-      data: this.state,
-    }).then((response) => {
-      if (response.data.status === "success") {
-        alert("Message Sent.");
-        this.resetForm();
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
-      }
-    });
-  }
-  resetForm() {
-    this.setState({ name: "", email: "", subject: "", message: "" });
+
+    emailjs
+      .sendForm(
+        "service_bc19jka",
+        "template_5vzlnmk",
+        e.target,
+        "user_ENS9y1cCbWJ3GnGg03AYE"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+    console.log("submit!");
   }
 
-  render() {
-    return (
-      <div>
-        <div id="contact" className="contact-container">
-          <div className="contact-form-container">
-            <h1>Let's get in touch</h1>
-            <form onSubmit={this.submitEmail} method="POST">
-              <label>
-                Full Name:
-                <input
-                  type="text"
-                  value={this.state.name}
-                  name="name"
-                  onChange={this.handleChange}
-                />
-              </label>
-              <label>
-                Email:
-                <input
-                  type="text"
-                  value={this.state.email}
-                  name="email"
-                  onChange={this.handleChange}
-                />
-              </label>
-              <label>
-                Message:
-                <input
-                  type="text"
-                  value={this.state.message}
-                  name="message"
-                  onChange={this.handleChange}
-                />
-              </label>
-              <input type="submit" name="Submit" />
-            </form>
+  return (
+    <div>
+      <div className="container">
+        <form onSubmit={sendEmail}>
+          <div className="row pt-5 mx-auto">
+            <div className="col-8 form-group mx-auto">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Name"
+                name="name"
+              />
+            </div>
+            <div className="col-8 form-group pt-2 mx-auto">
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Email Address"
+                name="email"
+              />
+            </div>
+            <div className="col-8 form-group pt-2 mx-auto">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Subject"
+                name="subject"
+              />
+            </div>
+            <div className="col-8 form-group pt-2 mx-auto">
+              <textarea
+                className="form-control"
+                id=""
+                cols="30"
+                rows="8"
+                placeholder="Your message"
+                name="message"
+              ></textarea>
+            </div>
+            <div className="col-8 pt-3 mx-auto">
+              <input
+                type="submit"
+                className="btn btn-info"
+                value="Send Message"
+              ></input>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default Contact;
