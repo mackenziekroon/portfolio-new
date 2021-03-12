@@ -116,6 +116,7 @@ button {
   background-color: #b6bb8b;
   height: 100vh;
   width: 100vw;
+  font-family: "Alegreya Sans SC";
 }
 
 @media only screen and (max-width: 1024px) {
@@ -131,6 +132,7 @@ button {
   padding-left: 5%;
   font-size: 75px;
   color: #f1f4f9;
+  font-family: "Alegreya Sans SC";
   /* font-variant: small-caps; */
 }
 
@@ -196,6 +198,7 @@ button {
   /* padding-right: 1%;
   padding-left: 1%; */
   overflow: hidden;
+  font-family: "Alegreya Sans SC";
 }
 
 .projects-title {
@@ -274,6 +277,7 @@ button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-right: 1%;
   padding-left: 1%;
+  font-family: "Alegreya Sans SC";
 }
 
 @media only screen and (max-width: 1024px) {
@@ -561,6 +565,7 @@ button {
   color: #b6bb8b;
   padding: 5px;
   margin: 2px;
+  font-size: x-large;
 }
 
 .seekr-demo {
