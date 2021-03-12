@@ -412,6 +412,11 @@ button {
   font-family: "Alegreya Sans SC";
 }
 
+.msg-sent {
+  padding-top: 5%;
+  text-align: center;
+}
+
 .seekr-modal {
   position: fixed;
   width: 100%;

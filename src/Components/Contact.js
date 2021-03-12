@@ -1,9 +1,23 @@
 import emailjs from "emailjs-com";
 import React from "react";
 import FormGroup from "@material-ui/core/FormGroup";
+import { render } from "react-dom";
 
-export default function ContactUs() {
-  function sendEmail(e) {
+export default class ContactUs extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      messageSent: false,
+    };
+    this.sendEmail = this.sendEmail.bind(this);
+  }
+
+  // handleClick(e) {
+  //   e.preventDefault();
+  //   this.setState((prevState) => ({ messageSent: !prevState.messageSent }));
+  // }
+
+  sendEmail(e) {
     e.preventDefault();
 
     emailjs
@@ -22,65 +36,73 @@ export default function ContactUs() {
         }
       );
     e.target.reset();
-    console.log("submit!");
+    this.setState((prevState) => ({
+      messageSent: !prevState.messageSent,
+    }));
   }
 
-  return (
-    <div>
-      <div id="contact" className="contact-container">
-        <div className="contact-msg">
-          Please reach out to discuss my projects or job opportunities!
-        </div>
-        <form className="contact-form-container" onSubmit={sendEmail}>
-          <div className="row pt-5 mx-auto">
-            <div className="col-8 form-group mx-auto">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Name"
-                name="name"
-                required
-              />
-            </div>
-            <div className="col-8 form-group pt-2 mx-auto">
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Email Address"
-                name="email"
-                required
-              />
-            </div>
-            <div className="col-8 form-group pt-2 mx-auto">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Subject"
-                name="subject"
-                required
-              />
-            </div>
-            <div className="col-8 form-group pt-2 mx-auto">
-              <textarea
-                className="form-control"
-                id=""
-                cols="30"
-                rows="8"
-                placeholder="Your message"
-                name="message"
-                required
-              ></textarea>
-            </div>
-            <div className="btn-container">
-              <input
-                className="submit-btn"
-                type="submit"
-                value="Send Message"
-              ></input>
-            </div>
+  render() {
+    return (
+      <div>
+        <div id="contact" className="contact-container">
+          <div className="contact-msg">
+            Please reach out to discuss my projects or job opportunities!
           </div>
-        </form>
+          <form className="contact-form-container" onSubmit={this.sendEmail}>
+            <div className="row pt-5 mx-auto">
+              <div className="col-8 form-group mx-auto">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div className="col-8 form-group pt-2 mx-auto">
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Email Address"
+                  name="email"
+                  required
+                />
+              </div>
+              <div className="col-8 form-group pt-2 mx-auto">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Subject"
+                  name="subject"
+                  required
+                />
+              </div>
+              <div className="col-8 form-group pt-2 mx-auto">
+                <textarea
+                  className="form-control"
+                  id=""
+                  cols="30"
+                  rows="8"
+                  placeholder="Your message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <div className="btn-container">
+                <input
+                  className="submit-btn"
+                  type="submit"
+                  value="Send Message"
+                ></input>
+              </div>
+              {this.messageSent ? (
+                <div className="msg-sent">Message Sent!</div>
+              ) : null}
+              {/* <div >message sent!</div> */}
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
