@@ -1,5 +1,6 @@
 import React from "react";
 import puppy from "./puppy.png";
+import design from "./design.png";
 
 const Main = () => {
   return (
@@ -28,7 +29,7 @@ const Main = () => {
               </p>
             </div>
             <div className="profile-photo-container">
-              <img className="puppy-photo" alt="puppy" src={puppy} />
+              <img className="profile-photo" alt="illustration" src={design} />
             </div>
           </div>
         </div>
