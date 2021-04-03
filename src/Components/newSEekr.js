@@ -66,7 +66,7 @@ class TempSeekr extends React.Component {
                   <div className="seekr-website">
                     <a
                       className="links"
-                      href="https://seekr-capstone.herokuapp.com/"
+                      href="https://capstone-seekr.herokuapp.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: "#b6bb8b" }}
