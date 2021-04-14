@@ -56,7 +56,7 @@ class PupQuiz extends React.Component {
 
                   <div className="tech">Node</div>
                   <div className="tech">Express</div>
-                  <div className="tech">Postgres</div>
+                  <div className="tech">PostgreSQL</div>
                 </div>
 
                 <div className="links-circle">
