@@ -420,10 +420,12 @@ button {
 }
 
 .submit-btn {
-  background-color: #707345;
+  background-color: #b6bb8b;
   color: #f1f4f9;
   border: none;
   padding: 1em;
+  width: 5em;
+  font-size: medium;
   margin-bottom: 5%;
   justify-content: center;
   font-family: "Alegreya Sans SC";

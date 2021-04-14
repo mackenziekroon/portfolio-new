@@ -88,7 +88,7 @@ export default class ContactUs extends React.Component {
                 <input
                   className="submit-btn"
                   type="submit"
-                  value="Send Message"
+                  value="Send"
                 ></input>
               </div>
               {this.state.messageSent && (
