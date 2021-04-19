@@ -17,8 +17,7 @@ button {
   padding: 8px;
   display: flex;
   flex-direction: row;
-  /* justify-content: center;
-  align-content: center; */
+  box-shadow: #707345 2px 2px 8px 2px;
   align-items: center;
   position: fixed;
   top: 0;
